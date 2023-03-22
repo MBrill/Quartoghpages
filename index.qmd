@@ -5,6 +5,8 @@ editor: visual
 ---
 Das ist die Datei index.qmd.
 
+Diese Site wurde mit quarto publish erzeugt!
+
 # Eine erste Datei
 Das ist die erste erzeugte Datei im Quarto-Projekt.
 
