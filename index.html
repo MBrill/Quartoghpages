@@ -111,6 +111,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><img src="images/vrLogo.png" class="img-fluid"></a></li>
   </ul></li>
   <li><a href="#wie-erzeugen-wir-die-website" id="toc-wie-erzeugen-wir-die-website" class="nav-link" data-scroll-target="#wie-erzeugen-wir-die-website">Wie erzeugen wir die Website?</a></li>
+  <li><a href="#idee" id="toc-idee" class="nav-link" data-scroll-target="#idee">Idee</a></li>
   </ul>
 </nav>
     </div>
@@ -152,10 +153,19 @@ ul.task-list li input[type="checkbox"] {
 <p>Wir erstellen die Quarto-Files lokal, dabei verwenden wir RStudio als Editor.</p>
 <p>Wir können dann lokal rendern, entweder in RStudio oder auf der Konsole. Das hat den Vorteil, dass wir lokal testlesen können.</p>
 <p>Das repo auf GitHub ist so konfiguriert, dass die GitHub Pages im Branch gh-pages liegen, in der Root /. Wir publizieren diese Pages mit Hilfe der Kommandos</p>
-<ul>
-<li><em>quarto render</em>,</li>
-<li><em>quarto publish</em>.</li>
-</ul>
+<pre><code>quarto render
+quarto publish</code></pre>
+<p>Unbedingt darauf achten, dass die quarto-Kommandos nicht im branch gh-pages ausgeführt werden!</p>
+<p>Hier der Code von der Quarto-Webpage für das Erstellen eines leeren gh-pages branch:</p>
+<pre><code>git checkout --orphan gh-pages
+git reset --hard 
+git commit --allow-empty -m "Initialising gh-pages branch"
+git push origin gh-pages</code></pre>
+<p>Nicht vergessen die Quell-Dateien zu pushen!</p>
+</section>
+<section id="idee" class="level1">
+<h1>Idee</h1>
+<p>Wir können das auch noch mit ant verknüpfen!</p>
 
 
 </section>
