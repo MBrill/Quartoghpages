@@ -1,0 +1,15 @@
+---
+title: "Die Einsteigsseite"
+format: html
+editor: visual
+---
+Das ist die Datei index.qmd.
+
+# Eine erste Datei
+Das ist die erste erzeugte Datei im Quarto-Projekt.
+
+# Ein Bild
+Hier sehen wir das Logo aus der Vorlesung!
+
+![](images/vrLogo.png)
+---
